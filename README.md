@@ -54,11 +54,11 @@ Then open:
 
 ## 🚀 Project Structure
 
-ml_project/
-│
-├── app.py # Main ML pipeline & training code
-├── p1.csv # Sales dataset
-└── README.md # Project documentation
+project/
+│── app.py                 # Main training code
+│── p1.csv                 # Dataset
+│── README.md              # Project documentation
+│── .venv/                 # Virtual environment (not uploaded)
 
 
 
@@ -67,15 +67,12 @@ ml_project/
 ### 1️⃣ Create virtual environment
 python -m venv .venv
 
-markdown
-Copy code
+
 
 ### 2️⃣ Activate
 **Windows**
 .venv\Scripts\activate
 
-shell
-Copy code
 
 ### 3️⃣ Install dependencies
 pip install pandas numpy scikit-learn mlflow matplotlib seaborn
@@ -86,9 +83,6 @@ pip install pandas numpy scikit-learn mlflow matplotlib seaborn
 
 Start MLflow:
 python -m mlflow ui
-
-css
-Copy code
 
 Run your ML code:
 python app.py
